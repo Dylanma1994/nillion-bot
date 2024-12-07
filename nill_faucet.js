@@ -205,7 +205,7 @@ async function readCredentials(i) {
     }
 }
 
-async function readProxies(filename = './nillion/proxies.txt') {
+async function readProxies(filename = '/proxies.txt') {
     try {
         const content = fs.readFileSync(filename, 'utf-8');
         return content.split('\n').filter(line => line.trim());
